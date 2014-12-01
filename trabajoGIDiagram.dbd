@@ -1,0 +1,89 @@
+<XMLDiagram>
+  <TDBADiagramController Locked="0">
+    <Elements>
+      <TDBADiagramObject id="1" propertiesclass="TDiagramMetaTableProperties" objectname="Message">
+        <TDiagramMetaTableProperties>
+          <Glyph>
+            <Geometry left="20" top="30" width="200" height="94"/>
+          </Glyph>
+        </TDiagramMetaTableProperties>
+      </TDBADiagramObject>
+      <TDBADiagramObject id="2" propertiesclass="TDiagramMetaTableProperties" objectname="User">
+        <TDiagramMetaTableProperties>
+          <Glyph>
+            <Geometry left="350" top="30" width="200" height="94"/>
+          </Glyph>
+        </TDiagramMetaTableProperties>
+      </TDBADiagramObject>
+      <TDBADiagramObject id="3" propertiesclass="TDiagramForeignKeyProperties" objectname="User.MessagesSent">
+        <TDiagramForeignKeyProperties>
+          <Relation>
+            <Geometry left="48" top="48" width="200" height="100"/>
+            <Glyph>
+              <Geometry>
+                <Point x="350" y="80"/>
+                <Point x="220" y="80"/>
+              </Geometry>
+            </Glyph>
+          </Relation>
+        </TDiagramForeignKeyProperties>
+      </TDBADiagramObject>
+      <TDBADiagramObject id="4" propertiesclass="TDiagramForeignKeyProperties" objectname="User.MessagesReceived">
+        <TDiagramForeignKeyProperties>
+          <Relation>
+            <Geometry left="64" top="64" width="200" height="100"/>
+            <Glyph>
+              <Geometry>
+                <Point x="350" y="70"/>
+                <Point x="220" y="70"/>
+              </Geometry>
+            </Glyph>
+          </Relation>
+        </TDiagramForeignKeyProperties>
+      </TDBADiagramObject>
+      <TDBADiagramObject id="5" propertiesclass="TDiagramForeignKeyProperties" objectname="User.Contacts">
+        <TDiagramForeignKeyProperties>
+          <Relation>
+            <Geometry left="80" top="80" width="200" height="100"/>
+            <Glyph>
+              <Geometry>
+                <Point x="450" y="77"/>
+                <Point x="570" y="117"/>
+                <Point x="570" y="147"/>
+                <Point x="540" y="147"/>
+                <Point x="450" y="77"/>
+              </Geometry>
+            </Glyph>
+          </Relation>
+        </TDiagramForeignKeyProperties>
+      </TDBADiagramObject>
+      <TDBADiagramObject id="6" propertiesclass="TDiagramForeignKeyProperties" objectname="Message.IDUserDest">
+        <TDiagramForeignKeyProperties>
+          <Relation>
+            <Geometry left="96" top="96" width="200" height="100"/>
+            <Glyph>
+              <Geometry>
+                <Point x="220" y="50"/>
+                <Point x="350" y="50"/>
+              </Geometry>
+            </Glyph>
+          </Relation>
+        </TDiagramForeignKeyProperties>
+      </TDBADiagramObject>
+      <TDBADiagramObject id="7" propertiesclass="TDiagramForeignKeyProperties" objectname="Message.IDUserSrc">
+        <TDiagramForeignKeyProperties>
+          <Relation>
+            <Geometry left="112" top="112" width="200" height="100"/>
+            <Glyph>
+              <Geometry>
+                <Point x="220" y="40"/>
+                <Point x="350" y="40"/>
+              </Geometry>
+            </Glyph>
+          </Relation>
+        </TDiagramForeignKeyProperties>
+      </TDBADiagramObject>
+    </Elements>
+    <Surface zoom="144" scrollx="0" scrolly="0"/>
+  </TDBADiagramController>
+</XMLDiagram>
