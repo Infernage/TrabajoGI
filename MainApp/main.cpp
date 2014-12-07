@@ -1,10 +1,6 @@
 #include "mainwindow.h"
 #include <QApplication>
 
-/*
- * - Servicio de mensajería
- */
-
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);

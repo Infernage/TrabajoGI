@@ -14,9 +14,9 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-        sqllib.cpp
+    delegate.cpp
 
 HEADERS  += mainwindow.h \
-            sqllib.h
+    delegate.h
 
 FORMS    += mainwindow.ui
