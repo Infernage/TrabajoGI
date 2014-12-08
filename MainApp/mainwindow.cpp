@@ -64,6 +64,7 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete ui;
+    db.close();
 }
 
 bool MainWindow::on_searchButton_clicked(QString phone)
@@ -99,7 +100,7 @@ void MainWindow::on_addButton_clicked()
     model->setData(model->index(idx, 1), "");
     model->setData(model->index(idx, 2), "");
     if (!model->submitAll()){ // Realiza un commit.
-        showError(QString("Contacto con teléfono \"") + QString::number(idx) + QString("\" ya existente"));
+        showError(QString("Contacto con teléfono \"") + phone + QString("\" ya existente"));
         model->revertAll(); // Realiza un rollback.
         return;
     }

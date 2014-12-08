@@ -74,6 +74,7 @@ private:
     Ui::MainWindow *ui; //! GUI components
     QSqlRelationalTableModel *model; //! Modelo relacional con la base de datos.
     ActionEdit *edit;
+    QSqlDatabase db;
 };
 
 #endif // MAINWINDOW_H
