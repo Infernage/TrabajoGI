@@ -12,6 +12,11 @@ void Delegate::setModelData(QWidget *editor, QAbstractItemModel *model, const QM
     QString data = line->text();
 
     int column = index.column();
+    bool ok;
+    data.toLongLong(&ok);
+    if ((!ok || data.size() != 9) && column == 3){
+        return;
+    }
 
     for(int i = 0; i < model->rowCount() && column == 3; i++)
     {

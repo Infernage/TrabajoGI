@@ -4,9 +4,16 @@
 #include <QSqlRelationalDelegate>
 #include <QLineEdit>
 
+/*!
+ * \brief Clase usada para restringir elementos duplicados en la tabla.
+ */
 class Delegate : public QSqlRelationalDelegate
 {
 public:
+    /*!
+     * \brief Default QObject constructor.
+     * \param parent The parent object for this. Default to NULL.
+     */
     explicit Delegate(QObject *parent = 0);
 
 protected:
